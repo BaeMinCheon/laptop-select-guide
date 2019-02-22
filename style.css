@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+  background-color: rgb(128, 128, 128);
+  background-image: url("Images/background.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#NOTICE
+{
+  font-family: 'Noto Sans KR';
+  font-weight: 300;
+}
+h1 /* for home */
+{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+h2 /* for menu */
+{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+h3 /* for sub_menu */
+{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+a
+{
+  text-decoration-line: none;
+}
+p
+{
+  text-align: center;
+}
+ul
+{
+  list-style-type: disc;
+}
+li
+{
+  padding-bottom: 12px;
+}
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 10px;
+  
+  max-width: 100%;
+  height: auto;
+}
+iframe
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  max-width: 100%;
+}
+#HOME
+{
+  font-family: 'Roboto';
+}
+#MENU
+{
+  font-family: 'Roboto';
+  
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  
+  margin-left: 180px;
+  margin-right: 180px;
+}
+#LOWER
+{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  
+  margin: 200px;
+  margin-top: 75px;
+}
+.SUBMENU
+{
+  font-family: 'Roboto';
+  
+  border: 2px rgba(255, 255, 255, 0.8) solid;
+  padding: 10px;
+}
+.MAIN
+{
+  font-family: 'Noto Sans KR';
+  
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  padding: 20px;
+}
+
+@media(max-width:1200px)
+{
+  #MENU
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #LOWER
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media(max-width:450px)
+{
+  #MENU
+  {
+    display: block;
+  }
+}
